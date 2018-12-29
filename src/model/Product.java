@@ -5,17 +5,50 @@ private String name;
 private String producer;
 private int numerId;
 private int price;
+private int quantity;
 
 
 public Product() {}
-public Product(String name,String producer,int numerId,int price) {
+public Product(String name,String producer,int numerId,int price, int quantity) {
 	this.setName(name);
 	this.setProducer(producer);
 	this.setNumerId(numerId);
 	this.setPrice(price);
+	this.setQuantity(quantity);
 	
 }
 
+
+public int getPrice() {
+	return price;
+}
+public void setPrice(int price) {
+	this.price = price;
+}
+public int getNumerId() {
+	return numerId;
+}
+public void setNumerId(int numerId) {
+	this.numerId = numerId;
+}
+public String getProducer() {
+	return producer;
+}
+public void setProducer(String producer) {
+	this.producer = producer;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public int getQuantity() {
+	return quantity;
+}
+public void setQuantity(int quantity) {
+	this.quantity = quantity;
+}
 
 @Override
 public String toString() {
@@ -56,29 +89,4 @@ public boolean equals(Object obj) {
 		return false;
 	return true;
 }
-public int getPrice() {
-	return price;
-}
-public void setPrice(int price) {
-	this.price = price;
-}
-public int getNumerId() {
-	return numerId;
-}
-public void setNumerId(int numerId) {
-	this.numerId = numerId;
-}
-public String getProducer() {
-	return producer;
-}
-public void setProducer(String producer) {
-	this.producer = producer;
-}
-public String getName() {
-	return name;
-}
-public void setName(String name) {
-	this.name = name;
-}
-
 }
